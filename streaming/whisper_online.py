@@ -57,8 +57,8 @@ class FasterWhisperASR:
             raise ValueError("必须设置modelsize或model_dir参数")
 
         model = WhisperModel(model_size_or_path,
-                             device="cpu",  # 使用cpu,更改点，后续使用GPU(cuda)
-                             compute_type="int8",  # 使用FP16精度float16
+                             device="cuda",  # 使用cpu,更改点，后续使用GPU(cuda)
+                             compute_type="float16",  # 使用FP16精度float16
                              download_root=cache_dir)
         return model
 
