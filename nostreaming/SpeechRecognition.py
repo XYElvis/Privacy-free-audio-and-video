@@ -268,7 +268,7 @@ def main():
 
     recognized_text,char_time_segments=whisper_audio(model_level,audio_path) # 进行语音识别（标记文字时间） base,medium
 
-    privacy_list=TextMatching(recognized_text) # 进行ai识别隐私词
+    # privacy_list=TextMatching(recognized_text) # 进行ai识别隐私词
 
     # 测试
     # privacy_list=TextMatching("5月17日下午3点,张三教授在2号楼405会议室进行能工智能与语音交互技术的主题演讲。参会人员需携带笔记本和U盘,途中注意安全。另外,明天的会议改在8楼东侧会议室。如果有疑问,请拨打138-5672-9014咨询。")
